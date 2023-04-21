@@ -57,37 +57,36 @@ if (special && numbr && lett && ulett) { // tailoring the summary array based on
 
 } else if (special && !numbr && lett && ulett) {
 
-  var pooltwo = spcialCh.concat(letter).concat(ucLetter);
+  var pool3 = spcialCh.concat(letter).concat(ucLetter);
 
   for (var a = 0; a < desirLength; a++) {
-    password.push(Math.floor(Math.random()*pooltwo.length));
+    password.push(Math.floor(Math.random()*pool3.length));
     }
 
 
 
 } else if (special && numbr && !lett && ulett) {
 
-  var pooltwo = spcialCh.concat(number).concat(ucLetter);
+  var pool4 = spcialCh.concat(number).concat(ucLetter);
 
   for (var a = 0; a < desirLength; a++) {
-    password.push(Math.floor(Math.random()*pooltwo.length));
+    password.push(Math.floor(Math.random()*pool4.length));
     }
 
 
 
   } else if (special && numbr && lett && !ulett) {
 
-  var pooltwo = spcialCh.concat(number).concat(letter);
+  var pool5 = spcialCh.concat(number).concat(letter);
 
   for (var a = 0; a < desirLength; a++) {
-    password.push(Math.floor(Math.random()*pooltwo.length));
+    password.push(Math.floor(Math.random()*pool5.length));
     }
   
   }
 }); 
 console.log(password);
-console.log(password.join(''));
-
+console.log(password.join(''));// intended to make one string out of elemnents in the var password 
 var passwordText = document.querySelector("#password"); // selecting html region where generated password to be displayed
 
-passwordText.value = password.value
+passwordText.value = password
