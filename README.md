@@ -6,6 +6,9 @@ This was a javascript oriented assignment where a password generator was expecte
 https://siavashnamiranian.github.io/Challenge3_passwordgenerator/
 https://github.com/SiavashNamiranian/Challenge3_passwordgenerator
 
+![pageperformance](./assets/Untitled%20video%20-%20Made%20with%20Clipchamp%20(2).gif)
+
+
 ## Installation
 
 N/A
